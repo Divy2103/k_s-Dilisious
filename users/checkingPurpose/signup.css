@@ -1,0 +1,127 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+body {
+    width: 100%;
+    background: linear-gradient(120deg, #f7a943, rgba(248, 201, 140, 0.872));
+    justify-content: center;
+    display: flex;
+    font-family: sans-serif;
+}
+form {
+    color: black;
+    padding: 0px;
+    width: 500px;
+    border: 3px solid;
+    align-items: center;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgb(229, 143, 56);
+}
+.main-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#heading {
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 25px 50px;
+    margin-bottom: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.input-main {
+    justify-content: center;
+}
+.input {
+    display: flex;
+    margin: 10px 20px;
+}
+.label {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    margin-bottom: 5px;
+}
+.label span:hover {
+    cursor: pointer;
+}
+.input-box {
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ff9100;
+    outline: none;
+}
+.term {
+    margin: 5px 120px;
+    margin-top: 20px;
+}
+.term span {
+    margin-right: 10px;
+}
+.signup-btn {
+    width: 75%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: #ff9100;
+    transition: 0.5s;
+    margin: 10px 50px;
+}
+.signup-btn:hover {
+    transform: scale(1.1);
+    background-color: rgb(240, 123, 21);
+}
+.log_in {
+    text-decoration: none;
+    color: #ff9100;
+    margin-left: 9px;
+    transition: 0.5s;
+}
+.log_in:hover {
+    color: rgb(240, 123, 21);
+}
+hr {
+    margin: 10px 0px 10px 50px;
+    width: 80%;
+}
+.or {
+    margin: 5px 47%;
+}
+.log_in-main {
+    margin: 20px 100px;
+    margin-top: 10px;
+}
+.input_class {
+    display: flex;
+    flex-direction: column;
+}
+.formerror {
+    color: red;
+    font-size: smaller;
+}
+.input_box_error {
+    border: 1px solid red;
+}
+

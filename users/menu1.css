@@ -1,0 +1,9 @@
+#total-item {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    background: white;
+    font-size: larger;
+    border-radius: 50%;
+}

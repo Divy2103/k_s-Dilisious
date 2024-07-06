@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="product.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!----===== Iconscout CSS ===== -->
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+    <script src="fontawesome-free-6.2.1-web/js/all.js"></script>
+
+    <!--<title>Admin Dashboard Panel</title>-->
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="./images/watch.jpeg" alt="">
+            </div>
+            <span class="logo_name">K's Delicious</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="./admin.html">
+                        <i class="fa-solid fa-home-user f-color-b f-color"></i>
+                        <span class="link-name">&nbsp; Dahsboard</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="fa-solid fa-clock  f-color-b f-color"></i>
+                        <!-- <a href="https://iconscout.com/icon/pizza-1440161"></a> -->
+                        <span class="link-name">&nbsp; Products</span>
+                    </a></li>
+                <li><a href="./Customer.html">
+                        <i class="fa-solid fa-people-line  f-color-b f-color"></i>
+                        <span class="link-name">&nbsp; Customer</span>
+                    </a></li>
+                <li><a href="./Order.html">
+                        <i class="fa-solid fa-truck  f-color-b f-color"></i>
+                        <span class="link-name">&nbsp; Orders</span>
+                    </a></li>
+                <!-- <li><a href="./Administration.html">
+                        <i class="fa-solid fa-user  f-color-b f-color"></i>
+                        <span class="link-name">&nbsp; Administration</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="fa-solid fa-info-circle  f-color-b f-color"></i>
+                        <span class="link-name">&nbsp; Info</span>
+                    </a></li> -->
+            </ul>
+
+            <ul class="logout-mode">
+                <li><a href="#">
+                        <i class="fa-solid fa-sign-out  f-color-b f-color"></i>
+                        <span class="link-name">&nbsp; Logout</span>
+                    </a></li>
+                <!-- 
+                <li class="mode">
+                    <a href="#">
+                        <i class="fa-solid fa-moon  f-color-b f-color"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a> -->
+
+                <div class="mode-toggle">
+                    <!-- <span class="switch"></span> -->
+                </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard" id="section">
+        <div class="top" id="to1">
+            <!-- <i class="uil uil-bars sidebar-toggle"></i> -->
+            <img class=" sidebar-toggle" src="./images/menu.png" alt="">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass searchbaricon"></i>
+                <!-- <i class="fa-solid fa-line searchbaricon"></i> -->
+                <input type="text" id="searchTxt" placeholder="Search here...">
+            </div>
+            <img src="./images/watch.jpeg" alt="">
+        </div>
+
+        <div class="dash-content" id="dash">
+            <div class="overview">
+                <div class="title">
+                    <i class="fa-solid fa-pizza-slice"></i>
+                    <span class="text">Products</span>
+                    <span class="addproduct" id="addproduct">add product</span>
+                </div>
+            </div>
+
+            <!-- <div class="activity">
+                <div class="activity-data">
+                    <div class="data type">
+                        <span class="data-title">Item Id</span>
+                        <span class="data-list ">001</span>
+                        <span class="data-list ">002</span>
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">Image</span>
+                        <img class="data-list " src="./images/LOGO2.jpg" style="width: 35px; border-radius: 50%;">
+                        <img class="data-list " src="./images/LOGO2.jpg" style="width: 35px; border-radius: 50%;">
+                    </div>
+                    <div class="data type">
+                        <div class="data-title">Type</div>
+                        <span class="data-list"><span> Cheese pizza </span></span>
+                        <span class="data-list ">Margherita pizza</span>
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">description</span>
+                        <span class="data-list ">this product is very good </span>
+                        <span class="data-list ">this product is also very good</span>
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Price</span>
+                        <span class="data-list ">$20</span>
+                        <span class="data-list ">$30</span>
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Delete</span>
+                        <span class="data-list fa-solid fa-trash-can-arrow-up productspace"></span>
+                        <span class="data-list fa-solid fa-trash-can-arrow-up productspace"></span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Item Id</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Info ">
+                    <td>001</td>
+                    <td><img src="images/product_watch.png" alt="" style="width: 35px; border-radius: 50%;"></td>
+                    <td>fastrak</td>
+                    <td>$10</td>
+                    <td style="width: 1px;cursor: pointer;" class="Delete"><i class="fa-solid fa-delete-left"></i></td>
+                </tr>
+
+                <tr class="Info ">
+                    <td>002</td>
+                    <td><img src="images/product_watch.png" alt="" style="width: 35px; border-radius: 50%;"></td>
+                    <td>rolex</td>
+                    <td>$20</td>
+                    <td style="width: 1px;cursor: pointer;" class="Delete"><i class="fa-solid fa-delete-left"></i></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+
+
+
+
+        <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
+        <!-- <div class="col-sm-3"></div> -->
+        <div class="col-sm-6 form-container forproducthide " id="hideshow">
+            <h1>Create a Product </h1>
+            <form action="" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label class="label">Product Title </label>
+                    <input type="text" class="form-control" id="Ptitle" name="title" required>
+                </div>
+                <div class="mb-3">
+                    <label class="label">Product Price</label>
+                    <input type="number" class="form-control" id="Pprice" name="price" required>
+                </div>
+                <div class="mb-3">
+                    <label class="label">Product Image</label>
+                    <input type="file" id="Pimg" class="form-control" name="image" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit" name="submit_form">Create</button>
+                <button class="btn btn-danger" id="Cancel" name="">Cancel</button>
+            </form>
+        </div>
+        <!-- <div class="col-sm-3"></div> -->
+        <!-- </div> -->
+
+        <!-- </div> -->
+
+    </section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="admin.js"></script>
+    <script src="product.js"></script>
+</body>
+
+</html>
